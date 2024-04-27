@@ -1,0 +1,148 @@
+
+Recap:
+
+    Why react :
+      Virtual DOM
+      SPA - Single Page Application
+
+    Setup react project:
+    Undetstanding JSX
+    Understanding the components
+    
+  Deploying react to Netlify
+
+  Node_modules: pre-written js codes to be included/imported in a project
+
+  Multi Page App:
+    https://retail.onlinesbi.sbi/personal/
+    A multiple refresh everytime to download common html codes/assets during interaction.
+    which leads lots of request and data consumtption and not being smooth
+
+  Single Page Application:
+
+    one single html with a js integrated, js controls the contents of the page
+
+    SPA, loads only the specific contents which needs changes and makes requests/assets call calls only for the specific region of the site
+
+  React Setup:
+
+    what is react?
+      front-end js library for manipulating DOM and producing contents using jsx
+
+    1. npm create vite@latest
+    2. enter project name
+    3. select framework react
+    4. select variant javascript
+    5. Follow the instructions on the screen
+      1. cd <project-name>
+      2. npm install
+      3. npm run dev
+
+  Structure of React & Folder Structure
+
+    jsx --> javascript xml, which permitts to write html elements inside js file
+      empty fragement --> <></>
+      expressions or varaibles can be used in curly {} braces
+
+    import/export
+
+      normal import/export using curly braces/ * as utils
+
+      default import/export
+
+    Virtual DOM:
+      Real DOM: Tree like structure 
+        html 
+          head
+            title
+            script
+            icon
+          body
+            div
+            h1
+            a
+            p
+
+      Virtual DOM: is In Memory Copy of the real DOM used while manipulating the DOM.
+
+      React  SPA:
+      Virtual DOM
+        The virtual DOM (VDOM) is a programming concept where an ideal, or “virtual”, representation of a UI is kept in memory and synced with the “real” DOM by a library such as ReactDOM.
+
+      Advantage: reconciliation process
+
+        where the changes happens only in the virtual DOM which will be compared with old virtual DOM. And if any difference is found it will affected in the Real DOM. 
+
+        No changes, Only memory/Virtual DOM changes not the real DOM
+
+Topics:  
+
+  React: Complete Documentation ---> https://react.dev/
+    
+    webpack & babeljs conversion
+
+    components:
+    Components (simple HTML layout to reusable react components)
+      Simple function returning JSX syntax combined to form a single component
+        Eg:
+          Card, Instagram Post, Menu Options
+      can be used like a tag/element in jsx syntax
+      
+      Expressions/variables are put inside curly of jsx syntax
+    
+    Working with array lists
+      List Rendering
+      
+      Usage of keys:
+      key props for a component is used to identify the element uniquely by VDOM
+      Do not use array index for key in component that will lead to confusion during interactions
+
+    Conditional rendering:
+      Rendering the JSX Elements Conditionally
+      {<boolean-value-evaluation> && ( JSX Element )}
+      {<boolean-value-evaluation> ? (this JSX Element) : (that JSX Element)}
+
+    Handling Events
+      onClick
+      onSubmit
+      change
+    Styling:
+      inline style --> using it as object
+      HTML Inline
+        <img src='https://image.com/image.png' style="height: 200px; width: 100px" />
+      React Inline
+        <img src={'https://image.com/image.png'} style={{ height: '200px', width: '100px' }} />
+
+      External Styling:
+        normal styling using .css
+
+        module styling using .module.css
+          import styles from './movie.module.css';
+          module styling only classNames and tags are allowed
+          Only classNames can be used in module styling
+      
+      ** Do Not use Document Object in React **
+
+Next Session:
+    props:
+      attributes passed for a component is called as prop
+      which can be used inside the props / destructured at component level
+
+      the essential information needed to create a component for displaying the information
+
+      proptypes:
+        specifying the type of the props values needed to create a component
+        this helps in reducing unwanted errors because of typeerror    
+    
+    state
+     
+
+Task:
+
+  Day-20  React Price Card Task
+    https://docs.google.com/document/d/11URBvZUsXT4Sr3YtCuv-5gcOHmkOmX976h-QKcXbWqs/edit
+
+
+    
+  
+
